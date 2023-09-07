@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>local_xml_reader</class>
+ <widget class="QWidget" name="local_xml_reader">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>497</width>
+    <height>274</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QComboBox" name="nf_entry_combo"/>
+   </item>
+   <item row="3" column="0" colspan="6">
+    <widget class="QLineEdit" name="cnpj_edit"/>
+   </item>
+   <item row="0" column="1" colspan="2">
+    <widget class="QLabel" name="lbl_nf_entry">
+     <property name="text">
+      <string>: Nf Entrada</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>10</width>
+       <height>8</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="10" column="7">
+    <widget class="QLabel" name="lbl_counter">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>0 of 0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QLineEdit" name="val_unit_edit"/>
+   </item>
+   <item row="2" column="3" colspan="2">
+    <widget class="QLabel" name="lbl_val_unit">
+     <property name="text">
+      <string>: Val Unit (Qtd)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="3">
+    <widget class="QLineEdit" name="ipi_edit"/>
+   </item>
+   <item row="9" column="0">
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>8</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="QLineEdit" name="item_edit"/>
+   </item>
+   <item row="7" column="7">
+    <widget class="QPushButton" name="prev_xml_btn">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5" colspan="2">
+    <widget class="QLineEdit" name="total_edit"/>
+   </item>
+   <item row="0" column="3" colspan="2">
+    <widget class="QLineEdit" name="qtd_edit"/>
+   </item>
+   <item row="5" column="7" colspan="2">
+    <widget class="QLabel" name="lbl_pedido">
+     <property name="text">
+      <string>: Pedido</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="8">
+    <widget class="QPushButton" name="next_xml_btn">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="7" colspan="2">
+    <widget class="QLabel" name="lbl_forn">
+     <property name="text">
+      <string>: Fornecedor</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QLabel" name="lbl_ipi">
+     <property name="text">
+      <string>: IPI (ODA)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QLabel" name="lbl_item">
+     <property name="text">
+      <string>: Item</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="4" colspan="3">
+    <widget class="QComboBox" name="pedido_combo"/>
+   </item>
+   <item row="3" column="7" colspan="2">
+    <widget class="QLabel" name="lbl_cnpj">
+     <property name="text">
+      <string>: CNPJ</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="QLabel" name="lbl_qtd">
+     <property name="text">
+      <string>: Qtd</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="5">
+    <widget class="QPushButton" name="jump_first_btn">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>|&lt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="9">
+    <widget class="QPushButton" name="jump_last_btn">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>&gt;|</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="7" colspan="2">
+    <widget class="QLabel" name="lbl_total">
+     <property name="text">
+      <string>: Total (R$)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="7">
+    <widget class="QComboBox" name="fornecedor_combo"/>
+   </item>
+   <item row="7" column="0" colspan="3">
+    <widget class="QPushButton" name="enable_automate_btn">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Habilitar Emissão</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="3" colspan="3">
+    <widget class="QPushButton" name="save_excel_btn">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Salvar na Planilha</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0" colspan="3">
+    <widget class="QPushButton" name="load_xml_btn_3">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Mais Informações</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="3" colspan="2">
+    <widget class="QPushButton" name="load_xml_btn">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Carregar Pasta</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

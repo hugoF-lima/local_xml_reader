@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CollectDataPane</class>
+ <widget class="QWidget" name="CollectDataPane">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>304</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QSpinBox" name="notes_no_spin"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLabel" name="notes_lbl">
+     <property name="text">
+      <string>: N° of Notes</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QComboBox" name="establ_combo"/>
+   </item>
+   <item row="1" column="1">
+    <widget class="QLabel" name="establ_lbl">
+     <property name="text">
+      <string>:Establ</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLineEdit" name="nat_op_entr">
+     <property name="text">
+      <string>S99.44</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QLabel" name="nat_op_lbl">
+     <property name="text">
+      <string>: Nat. Op</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QComboBox" name="cfop_combo"/>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLabel" name="cfop_lbl">
+     <property name="text">
+      <string>:CFOP</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QDateEdit" name="fato_gerador_edit">
+     <property name="date">
+      <date>
+       <year>2023</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QLabel" name="fato_ger_lbl">
+     <property name="text">
+      <string>: Fato Gerador</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0" rowspan="2">
+    <widget class="QPushButton" name="nat_op_button">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Mudar Nat. Op</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QPushButton" name="query_data_btn">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Pesquisar Notas</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QPushButton" name="collect_data_btn">
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Coletar Dados</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
